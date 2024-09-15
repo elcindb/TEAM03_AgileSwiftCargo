@@ -53,6 +53,12 @@ public class Merchant {
     @FindBy(xpath = "//label[@for='trade_license']")
     public WebElement  tradeLicenceProfile;
 
+    @FindBy(xpath = "(//*[text()='Dashboard'])[1]")
+
+    public WebElement dashboardButton;
+
+
+
 
 
 
