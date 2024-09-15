@@ -2,6 +2,7 @@ package utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -9,6 +10,8 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.time.Duration;
 
 public class Driver {
+
+    static ChromeOptions options = new ChromeOptions();
 
     // Driver class'i WebDriver objesini olusturacagimiz
     // ve gerkeli ayarlari yapacagimiz class olacak
@@ -25,6 +28,8 @@ public class Driver {
     public static WebDriver driver;
 
     public static WebDriver getDriver(){
+
+        options.addArguments("--disable-search-engine-choice-screen");
 
         if (driver == null){
             String istenenBrowser = ConfigReader.getProperty("browser"); // firefox
@@ -44,7 +49,7 @@ public class Driver {
                     break;
 
                 default:
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(options);
             }
 
             driver.manage().window().maximize();
