@@ -7,6 +7,7 @@ import utilities.Driver;
 
 public class Admin {
 
+
     public Admin(){
 
         PageFactory.initElements(Driver.getDriver(),this);
@@ -42,3 +43,15 @@ public class Admin {
 
 
 }
+    public Admin(){ PageFactory.initElements(Driver.getDriver(),this); }
+
+    @FindBy (xpath = "//*[text()='Agile Swift Cargo Dashboard ']")
+    public WebElement AdminDashboardPageText;
+
+
+
+
+
+
+   }
+
