@@ -36,14 +36,23 @@ public class US_031 {
     public void email_olarak_girer(String email) {
         home.loginPageEmailBox.sendKeys(ConfigReader.getProperty(email));
     }
+
+
+
     @Then("password olarak {string} girer")
     public void password_olarak_girer(String sifre) {
         home.loginPagePasswordBox.sendKeys(ConfigReader.getProperty(sifre));
     }
+
+
+
     @Then("singIn butonuna basar")
     public void sing_in_butonuna_basar() {
          home.loginPageSignIn.click();
     }
+
+
+
     @Then("basarili giris yapilabildigini test eder")
     public void basarili_giris_yapilabildigini_test_eder() {
         admin.AdminDashboardPageText.isDisplayed();
