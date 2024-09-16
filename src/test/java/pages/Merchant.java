@@ -23,7 +23,7 @@ public class Merchant {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement signInButton;
 
-    @FindBy(xpath = "(//img[@class='user-avatar-md rounded-circle'])[6]")
+    @FindBy(xpath = "(//img[@class='user-avatar-md rounded-circle'])[7]")
     public WebElement  profileIconInTheTopBar;
 
     @FindBy(xpath = "(//a[text()='Profile'])[1]")
@@ -53,7 +53,82 @@ public class Merchant {
     @FindBy(xpath = "//label[@for='trade_license']")
     public WebElement  tradeLicenceProfile;
 
-    @FindBy(xpath = "(//*[text()='Dashboard'])[1]")
+
+    @FindBy(xpath = "(//li[@class='nav-item '])[6]")
+    public WebElement parcelsDashboardMenu;
+
+    @FindBy(xpath = "//a[@href='https://qa.agileswiftcargo.com/merchant/parcel/create']")
+    public WebElement parcelsListAddBoutton;
+
+    @FindBy(xpath = "(//input[@type='text'])[8]")
+    public WebElement cashCollectiontexteBoxe;
+
+    @FindBy(xpath = "(//span[@class='select2-selection__rendered'])[2]")
+    public WebElement categorytexteBoxe;
+
+    @FindBy(xpath = "//li[text()='KG']")
+    public WebElement categoryOptiosKG;
+
+    @FindBy(xpath = "(//span[@class='select2-selection__rendered'])[4]")
+    public WebElement deliveryTypetexteBoxe;
+
+    @FindBy(xpath = "(//li[@class='select2-results__option select2-results__option--selectable'])[1]")
+    public WebElement deliveryTypeOptionsSameDay;
+
+    @FindBy(xpath = "//input[@id='customer_name']")
+    public WebElement customerNametexteBoxe;
+
+    @FindBy(xpath = "//button[text()='Save']")
+    public WebElement saveButtonParcelsCreate;
+
+    @FindBy(xpath = "(//p[text()='Jhon Doe'])[1]")
+    public WebElement customerNameReceptionInfo;
+
+    @FindBy(xpath = "//a[@href='https://qa.agileswiftcargo.com/merchant/profile/update/941']")
+    public WebElement editButtonMerchantProfile;
+
+    @FindBy(xpath = "//input[@id='mobile']")
+    public WebElement mobileTexteBoxMerchantProfile;
+
+    @FindBy(xpath = "//button[text()='Save Change']")
+    public WebElement saveChangeButtonProfile;
+
+    @FindBy(xpath = "(//span)[36]")
+    public WebElement valeurPhoneProfile;
+
+    @FindBy(xpath = "//label[@for='old_password']")
+    public WebElement oldPasswordTexte;
+
+    @FindBy(xpath = "//label[@for='new_password']")
+    public WebElement newPasswordTexte;
+
+    @FindBy(xpath = "//label[@for='confirm_password']")
+    public WebElement confirmePasswordTexte;
+
+
+    @FindBy(xpath = "//button[text()='Save Change']")
+    public WebElement saveChangePasswordButton;
+
+    @FindBy(xpath = "//a[text()='Cancel']")
+    public WebElement cancelPasswordButton;
+
+    @FindBy(xpath = "//input[@id='old_password']")
+    public WebElement oldPasswordInputBox;
+
+    @FindBy(xpath = "//input[@id='new_password']")
+    public WebElement newPasswordInputBox;
+
+    @FindBy(xpath = "//input[@id='confirm_password']")
+    public WebElement confirmePasswordInputBox;
+
+
+
+
+
+
+
+
+  @FindBy(xpath = "(//*[text()='Dashboard'])[1]")
 
     public WebElement dashboardButton;
 
