@@ -64,6 +64,5 @@ public Home(){
     @FindBy (xpath = "//*[@class='alert alert-success']")
     public WebElement mailDogrulamaTexti;
 
-
 }
 
