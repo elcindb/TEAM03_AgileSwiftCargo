@@ -37,21 +37,19 @@ public class Admin {
     @FindBy(xpath = "(//input[@type='text'])[3]")
     public WebElement phoneTextBranch;
 
-
-
-
-
-
-}
-    public Admin(){ PageFactory.initElements(Driver.getDriver(),this); }
-
     @FindBy (xpath = "//*[text()='Agile Swift Cargo Dashboard ']")
     public WebElement AdminDashboardPageText;
 
 
+}
 
 
 
 
-   }
+
+
+
+
+
+
 
